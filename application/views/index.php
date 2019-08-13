@@ -16,6 +16,8 @@
     ==================================================-->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>application/assets/images/favicon.ico">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Google Fonts
     ==================================================-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu:500,700" rel="stylesheet">
@@ -148,10 +150,7 @@
                             <ul>
                                 <li><a href="https://www.facebook.com/leonardo.ayala.75" class="fb"><i class="fa fa-facebook"></i></a>
                                 </li>
-                                <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#" class="gp"><i class="fa fa-google"></i></a>
-                                </li>
+                              
                             </ul>
                         </div>
                     </div>
@@ -354,8 +353,7 @@
                         <span><i class="fa fa-code"></i></span>
                         <div class="single-desc">
                             <h3>Codeigneter</h3>
-                            <p>Rx-Resume is coded with love and simple readable code. Who are so beguiled and be demoralized
-                                by the hardwork?</p>
+                            <p> leo</p>
                         </div>
                     </div>
                 </div>
@@ -365,8 +363,7 @@
                         <span><i class="fa fa-code"></i></span>
                         <div class="single-desc">
                             <h3>Laravel</h3>
-                            <p>Rx-Resume is coded with love and simple readable code. Who are so beguiled and be demoralized
-                                by the hardwork?</p>
+                            <p> leo</p>
                         </div>
                     </div>
                 </div>
@@ -376,8 +373,7 @@
                         <span><i class="fa fa-android"></i></span>
                         <div class="single-desc">
                             <h3>React native</h3>
-                            <p>Rx-Resume is coded with love and simple readable code. Who are so beguiled and be demoralized
-                                by the hardwork?</p>
+                            <p> leo</p>
                         </div>
                     </div>
                 </div>
@@ -387,8 +383,7 @@
                         <span><i class="fa fa-android"></i></span>
                         <div class="single-desc">
                             <h3>Android studio</h3>
-                            <p>Rx-Resume is coded with love and simple readable code. Who are so beguiled and be demoralized
-                                by the hardwork?</p>
+                            <p> leo</p>
                         </div>
                     </div>
                 </div>
@@ -398,8 +393,7 @@
                         <span><i class="fa fa-picture-o"></i></span>
                         <div class="single-desc">
                             <h3>Photoshop</h3>
-                            <p>Rx-Resume is coded with love and simple readable code. Who are so beguiled and be demoralized
-                                by the hardwork?</p>
+                            <p> leo</p>
                         </div>
                     </div>
                 </div>
@@ -409,8 +403,7 @@
                         <span><i class="fa fa-github"></i></span>
                         <div class="single-desc">
                             <h3>Repositorios Git</h3>
-                            <p>Rx-Resume is coded with love and simple readable code. Who are so beguiled and be demoralized
-                                by the hardwork?</p>
+                            <p> leo</p>
                         </div>
                     </div>
                 </div>
@@ -885,27 +878,28 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-intro">
-                        <h2 class="section-title">get in touch</h2>
+                        <h2 class="section-title">Contacto</h2>
                     </div>
                 </div>
                 
                 <div class="col-md-6 col-sm-6">
                     <div class="contact-form">
                         <div id="form-messages"></div>
-                        <form method="post" action="<?=$url?>mandarmensaje">
+                        <form id="form_contacto" >
                             <div class="form-group">
                                 <label class="field-label" for="name">Nombre</label>
                                 <input class="field-input" type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
                                 <label class="field-label" for="email">Correo</label>
-                                <input class="field-input" type="email" id="email" name="email" required>
+                                <input class="field-input" type="email" id="correo" name="correo" required>
                             </div>
                             <div class="form-group">
-                                <label class="field-label" for="message">message</label>
-                                <textarea id="message" class="field-input" name="message" required></textarea>
+                                <label class="field-label" for="message">Mensaje</label>
+                                <textarea id="mensaje" class="field-input" name="mensaje" required></textarea>
                             </div>
-                            <button type="submit">submit</button>
+                            <input type="hidden" value="<?=$url?>">
+                            <button id="enviarmensaje" type="button">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -917,17 +911,45 @@
                         </div>
                        
                     </div>
+                   
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-md-12">
                     <div class="copy-right text-center">
-                        <p>Copyright © <a href="#">theme_village</a> All right reserved.</p>
+                        <p>Copyright © <a href="#"></a> Leonardo Ayala</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- CONTACT AREA END HERE -->
+    <script type="text/javascript">
+    $(document).on("click","#enviarmensaje",function(e){
+   // alert("no funciona");
+    
+    var datos = $( "#form_contacto" ).serialize();
+    var urlAjax=$("#url").val()+"mandarmensaje";
+    $.ajax({
+      url: urlAjax,
+      data: {datos},
+      type:'POST',
+      
+      beforeSend:function(){
+        console.log("antes de enviar");
+      },
+      error:function(response){
+          console.log(response);
+        
+        },
+      success:function(response){
+        alert("mensaje enviado correctamente");
+        },
+      complete:function(){
+      }  
+    })
+  });
+    
+</script>
 
 
     <!--  JQuery v1.12.4

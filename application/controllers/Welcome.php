@@ -41,10 +41,10 @@ class Welcome extends CI_Controller {
 		$this->Msecurity->url_and_lan($d);
 	
 		$datos= $this->input->post();
-		parse_str($this->input->post(""), $nuevodato);
-		$nombre=$this->input->post("name");
-		$correo=$this->input->post("correo");
-		$mensajenuevo=$this->input->post("mensaje");
+		parse_str($this->input->post("datos"), $nuevodato);
+		$nombre=$nuevodato["nombre"];
+		$correo=$nuevodato["correo"];
+		$mensajenuevo=$nuevodato["mensaje"];
 
 		print_r($nuevodato);
 		$subject = "Asunto del email";
@@ -62,7 +62,7 @@ class Welcome extends CI_Controller {
 		            
 		            '</body>'.
 		            '</html>';
-		            echo "$mensaje";
+		          
 		            $enviado = mail($correo, "nueva consulta", $mensaje, $headers);
 
 
