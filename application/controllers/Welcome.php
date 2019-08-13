@@ -37,8 +37,42 @@ class Welcome extends CI_Controller {
 	/**/
 
 	public function mandarmensaje(){
-		
+		$d = array();
+		$this->Msecurity->url_and_lan($d);
+	
+		$datos= $this->input->post();
+		parse_str($this->input->post(""), $nuevodato);
+		$nombre=$this->input->post("name");
+		$correo=$this->input->post("correo");
+		$mensajenuevo=$this->input->post("mensaje");
+
+		print_r($nuevodato);
+		$subject = "Asunto del email";
+		$headers = "MIME-Version: 1.0" . "\r\n";
+		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+		$mensaje = '<html>'.
+		            '<head><title>NUEVA CONSULTA</title></head>'.
+		            '<body>'.
+		            'alguien esta pidiendo tus datos pa algun trabajo'.
+		            $nombre.
+		            '<br>'.
+		            ' el mensaje es '.
+		            $mensajenuevo.
+		            '<br>'.
+		            
+		            '</body>'.
+		            '</html>';
+		            echo "$mensaje";
+		            $enviado = mail($correo, "nueva consulta", $mensaje, $headers);
+
+
+
+
+
 	}	
+
+
+
 	public function error404($lan='es')
 	{
 		$d = array();
