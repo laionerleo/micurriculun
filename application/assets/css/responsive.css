@@ -1,0 +1,560 @@
+/*===========================================
+Tablet Layout: 768px.
+============================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-menu .navbar-brand {
+        padding: 10px 0px;
+        width: 130px;
+    }
+
+    .main-menu .navbar-default .navbar-nav > li > a {
+        padding: 22px 10px;
+        font-size: 14px;
+    }
+
+    .banner-txt {
+        bottom: 28%;
+    }
+
+    .main-menu .navbar-brand {
+        padding: 10px 0;
+        width: 165px;
+    }
+
+    .main-menu .navbar-brand img {
+        height: 60px;
+    }
+
+    .is-sticky .main-menu .navbar-brand img {
+        height: 50px;
+    }
+
+    .is-sticky .header-area .navbar-brand {
+        padding: 0px 15px 7px;
+    }
+
+    .is-sticky .header-area .navbar-default .navbar-nav > li > a {
+        padding: 15px 10px;
+    }
+
+    .portfolio-area .modal-dialog {
+        margin: 150px auto 30px;
+        width: 90%;
+    }
+
+    .portfolio-area .grid-item .modal-body img {
+        min-height: 410px;
+    }
+
+    .about-social > ul > li {
+        padding-right: 10px;
+    }
+
+    .about-area .section-title::after {
+        left: 20%;
+        top: 55px;
+    }
+
+    .single-certificate {
+        padding: 20px;
+    }
+
+    .single-certificate h4 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .right .single-certificate::after {
+        left: -27px;
+    }
+
+    .certificate-collum.right::after {
+        left: -6.2px;
+    }
+
+    .single-certificate::after {
+        right: -27px;
+    }
+
+    .progress-circular {
+        padding-left: 10px;
+    }
+
+    .progress-circular > span {
+        font-size: 18px;
+    }
+
+    .single-desc > p {
+        font-size: 15px;
+    }
+
+    .portfolio-menu ul li a {
+        font-size: 16px;
+    }
+
+    .portfolio-menu ul li {
+        padding-right: 5px;
+    }
+
+    .single-fun {
+        padding: 40px 20px;
+    }
+
+    .single-fun > p {
+        letter-spacing: 1px;
+    }
+
+    .qoute-thumb {
+        width: 30%;
+    }
+
+    .qoute-details {
+        width: 62%;
+    }
+
+    .blog-details {
+        padding: 10px;
+    }
+
+    .review-area .section-title::after {
+        left: 12%;
+    }
+
+    .review-area .owl-theme .owl-controls {
+        bottom: -25px;
+        left: 47%;
+    }
+
+    .qoute-details > p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .about-intro {
+        padding-left: 70px;
+    }
+
+    .persional-info .info {
+        margin-left: 115px;
+    }
+
+    .persional-info .head {
+        width: 112px;
+    }
+
+    .form-group.half {
+        width: 47.7%;
+    }
+
+    .sidebar {
+        margin-top: 60px;
+    }
+
+    .education > h3,
+    .experience > h3 {
+        font-size: 26px;
+    }
+
+    .sidebar.left-sidebar {
+        margin-top: 0;
+    }
+
+    .single-full .post-thumb > img {
+        height: 400px;
+    }
+
+    .single-full .about-author .section-title::after,
+    .single-full .comments-area .section-title::after,
+    .single-full .leave-comment .section-title::after {
+        left: 7%;
+    }
+
+    .single-full .form-group.half {
+        width: 47.6%;
+    }
+
+    .error-heading {
+        font-size: 60px;
+    }
+
+    .error-wrap::before {
+        font-size: 260px;
+    }
+
+    .error-thumb > img {
+        height: 175px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .port-hover > .title {
+        font-size: 16px;
+        letter-spacing: 5px;
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+/*=======================================
+Mobile Layout: 320px.
+=========================================*/
+
+@media only screen and (max-width: 767px) {
+    .main-menu .navbar-toggle:hover, .main-menu .navbar-toggle:focus {
+        background: #000;
+    }
+
+    ul.nav.navbar-nav.navbar-right {
+        padding-left: 45px;
+    }
+
+    .main-menu .navbar-default .navbar-nav > li > a {
+        padding: 21px 18px;
+    }
+
+    .element {
+        font-size: 32px;
+    }
+
+    .about-social > ul > li {
+        padding-right: 10px;
+    }
+
+    .about-thumb {
+        width: 95%;
+    }
+
+    .education > h3,
+    .experience > h3 {
+        font-size: 26px;
+    }
+
+    #scrollUp {
+        right: 15px;
+    }
+
+    .about-intro {
+        border: none;
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+
+    .hero-wrap.text-center > p,
+    .banner-txt > p {
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+
+    .about-intro::after,
+    .about-intro::before,
+    .certificate-collum.right::after,
+    .right .single-certificate::after,
+    .single-certificate::after,
+    .qoute-thumb::after {
+        display: none;
+    }
+
+    .persional-info .info {
+        margin-left: 130px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .education {
+        text-align: left;
+    }
+
+    .about-area .section-title::after {
+        left: 18%;
+    }
+
+    .single-certificate {
+        padding: 20px;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .single-certificate h4 {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .single-certificate > p {
+        font-size: 16px;
+    }
+
+    .experience {
+        margin-top: 60px;
+    }
+
+    .right .single-certificate {
+        margin-left: 0;
+    }
+
+    .progress-circular {
+        padding-left: 5px;
+    }
+
+    .skill-area .col-xs-12.col-sm-6.col-md-6 {
+        padding: 0;
+    }
+
+    .progress-circular > span {
+        font-size: 17px;
+    }
+
+    .portfolio-menu ul li {
+        padding-right: 10px;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-menu ul li a {
+        font-size: 16px;
+    }
+
+    .portfolio-area button.close {
+        right: 15px;
+        top: 15px;
+    }
+
+    .accordion-wrap,
+    .contact-form {
+        margin-top: 30px;
+    }
+
+    .single-fun {
+        width: 100%;
+    }
+
+    .qoute-thumb {
+        float: none;
+        margin-right: auto;
+    }
+
+    .qoute-details {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .review-area .section-title::after {
+        left: 18%;
+        top: 55px;
+    }
+
+    .fun-area.clearfix {
+        height: 1260px;
+    }
+
+    .single-brand {
+        width: 96%;
+    }
+
+    .review-area .owl-theme .owl-controls {
+        bottom: -35px;
+        left: 23%;
+    }
+
+    .main-menu .navbar-brand {
+        padding: 7px 5px;
+    }
+
+    .is-sticky .main-menu .navbar-brand {
+        padding: 0 5px;
+    }
+
+    .is-sticky .main-menu .navbar-toggle {
+        margin-top: 16px;
+    }
+
+    .main-menu .navbar-brand img {
+        height: 55px;
+    }
+
+    .post-title {
+        font-size: 30px;
+    }
+
+    .port-hover > .title {
+        font-size: 14px;
+        left: 14%;
+        letter-spacing: 2px;
+    }
+
+    .about-author .section-title::after,
+    .comments-area .section-title::after,
+    .leave-comment .section-title::after {
+        left: 18%;
+    }
+
+    .single-full .about-author .section-title::after,
+    .single-full .comments-area .section-title::after,
+    .single-full .leave-comment .section-title::after {
+        left: 16%;
+    }
+
+    .about-social > ul > li,
+    .author-social ul li {
+        padding-right: 12px;
+    }
+
+    .about-img,
+    .comment-img {
+        float: none;
+        padding-bottom: 10px;
+    }
+
+    .about-txt,
+    .comment-text {
+        margin: 0;
+    }
+
+    .name {
+        margin-bottom: 10px;
+    }
+
+    .persional-info .head {
+        width: auto;
+    }
+
+    .persional-info .info {
+        margin-right: 115px;
+        margin-left: 0px;
+    }
+
+    .about-intro {
+        padding-right: 0px;
+    }
+
+    .portfolio-area .grid-item, .portfolio-area .grid-item--height2, .portfolio-area .grid-item--height2 img {
+        width: 100%;
+        height: 270px;
+
+    }
+
+    .portfolio-area .grid-item img {
+        height: 270px;
+    }
+
+    .prev-pagination,
+    .next-pagination {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .post-pagination {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .post-thumb > img,
+    .single-full .post-thumb > img {
+        height: 250px;
+    }
+
+    .author-social {
+        margin-top: 25px;
+    }
+
+    .about-author .section-title,
+    .comments-area .section-title,
+    .sidebar .widget-title,
+    .leave-comment .section-title {
+        font-size: 22px;
+    }
+
+    .form-group.half,
+    .single-full .form-group.half {
+        width: 100%;
+    }
+
+    .post-p-text > h2 {
+        font-size: 30px;
+    }
+
+    .error-wrap::before {
+        font-size: 170px;
+        left: 50%;
+        top: 75%;
+    }
+
+    .error-txt {
+        width: 100%;
+    }
+
+    .error-heading {
+        font-size: 60px;
+    }
+
+    .error-wrap {
+        padding: 80px 15px;
+    }
+
+    .error-thumb {
+        padding-top: 35px;
+    }
+
+    .error-thumb > img {
+        height: auto;
+    }
+}
+
+/*================================
+Wide Mobile Layout: 480px.
+==================================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .about-area .section-title::after {
+        left: 11%;
+    }
+
+    .hero-wrap.text-center > p,
+    .banner-txt > p {
+        font-size: 18px;
+        letter-spacing: 8px;
+    }
+
+    .element {
+        font-size: 45px;
+    }
+
+    .port-hover > .title {
+        font-size: 16px;
+        left: 20%;
+        letter-spacing: 5px;
+    }
+
+    .post-pagination {
+        padding: 45px 30px;
+    }
+
+    .prev-pagination,
+    .next-pagination {
+        font-size: 18px;
+        padding: 5px 22px;
+    }
+
+    .single-full .about-author .section-title::after,
+    .single-full .comments-area .section-title::after,
+    .single-full .leave-comment .section-title::after,
+    .about-author .section-title::after,
+    .comments-area .section-title::after,
+    .leave-comment .section-title::after {
+        left: 10%;
+    }
+
+    .error-heading {
+        font-size: 86px;
+    }
+
+    .error-wrap::before {
+        font-size: 272px;
+        left: 50%;
+        top: 72%;
+    }
+}
