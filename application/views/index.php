@@ -470,10 +470,10 @@
                 </div>
                 <div class="port-hover">
                     <h4 class="title">project title</h4>
-                    <a href="#" data-toggle="modal" data-target="#myModal-5"><span class="point"><i class="fa fa-plus"></i></span></a>
+                    <a href="#" data-toggle="modal" data-target="#myModal-2"><span class="point"><i class="fa fa-plus"></i></span></a>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="myModal-5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-body">
@@ -507,10 +507,10 @@
                 </div>
                 <div class="port-hover">
                     <h4 class="title">GIFILE</h4>
-                    <a href="#" data-toggle="modal" data-target="#myModal-4"><span class="point"><i class="fa fa-plus"></i></span></a>
+                    <a href="#" data-toggle="modal" data-target="#myModal-3"><span class="point"><i class="fa fa-plus"></i></span></a>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="myModal-4" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-body">
@@ -538,6 +538,45 @@
                 </div>
                 <!-- Model End Here -->
             </div>
+            <div class="grid-item ca1">
+                <div width="100%" height="100%">
+                <img src="<?php echo base_url(); ?>application/assets/images/portafolio/mealla.PNG"   alt="Image">
+                </div>
+                <div class="port-hover">
+                    <h4 class="title">MEALLA</h4>
+                    <a href="#" data-toggle="modal" data-target="#myModal-4"><span class="point"><i class="fa fa-plus"></i></span></a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal-4" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <img src="<?php echo base_url(); ?>application/assets/images/portafolio/mealla.PNG" alt="Image">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="demo-detals">
+                                            <span class="date">Date: 2018</span>
+                                            <h3 class="project-heading">Mealla</h3>
+                                            <h5 class="category">Codeigneter</h5>
+                                            <p> proyecto desarrollado para la empresa de consultoria Meallas</p>
+                                            <a href="https://proyectobase17.000webhostapp.com/" class="custom-btn">click</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Model End Here -->
+            </div>
+
+
+            
             <!-- Grid End Here -->
          
             <!-- Grid End Here -->
